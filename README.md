@@ -1,5 +1,7 @@
 RPi initramfs [WIP]
 =============
+Features:
+- Cross-compiled Linux From Scratch with musl libc
 
 How to use:
 - Download kernel source
@@ -9,6 +11,6 @@ How to use:
 CONFIG_BLK_DEV_INITRD=y
 CONFIG_INITRAMFS_SOURCE="../target_fs"
 ```
-- Run make ARCH=arm CROSS_COMPILE=/path/to/cross/compiler
+- Compile kernel
 - Copy arch/arm/boot/zImage to /boot/kernel.img
 - Blow your Pi (It's WIP, remember?)
